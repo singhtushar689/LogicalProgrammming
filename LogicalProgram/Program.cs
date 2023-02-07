@@ -10,7 +10,8 @@ namespace LogicalProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Option Given Below: \n1.FibonacciSeries \n2. PerfectNumber \n Exit");
+            Console.WriteLine("Enter the Option Given Below: \n1.FibonacciSeries \n2. PerfectNumber \n3. PrimeNumber" +
+                "\n Exit");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +22,10 @@ namespace LogicalProgram
                 case 2:
                     PerfectNumber perfect = new PerfectNumber();
                     perfect.Perfect();
+                    break;
+                case 3:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.Prime();
                     break;
                 default:
                     break;
