@@ -11,7 +11,7 @@ namespace LogicalProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the Option Given Below: \n1. FibonacciSeries \n2. PerfectNumber \n3. PrimeNumber" +
-                "\n4. ReverseNumber \n5. GeneratingUniqueCouponNumber \n Exit");
+                "\n4. ReverseNumber \n5. GeneratingUniqueCouponNumber \n6. StopWatch \n Exit");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +34,10 @@ namespace LogicalProgram
                 case 5:
                     CouponNumber couponNum = new CouponNumber();
                     couponNum.Coupon();
+                    break;
+                case 6:
+                    StopWatch watch = new StopWatch();
+                    watch.StopWatchElapseTime();
                     break;
                 default:
                     break;
